@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-rrpu
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-mddd-tenant/mc-quality-dashboard/backend-quality-dashboard-rrpu@sha256:bc06e520181a92cdd3602200a6ab5aad040c1dde126a830ac6b41ee87811c022
+        name: container-image
+        resources: {}
+status: {}
